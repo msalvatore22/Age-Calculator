@@ -1,0 +1,133 @@
+.inputs {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 15px 0 0;
+}
+
+.form-field>input::placeholder {
+  color: hsl(0, 1%, 44%);
+}
+
+.invalid-message {
+  color: hsl(0, 100%, 67%);
+  font-weight: 400;
+  font-style: italic;
+  font-size: small;
+  top: 90px;
+  width: max-content;
+}
+
+.invalid-form {
+  color: hsl(0, 100%, 67%);
+  font-weight: 400;
+  font-style: italic;
+  font-size: small;
+  width: max-content;
+}
+
+.form-field>input:focus {
+  outline-color: hsl(259, 100%, 65%);
+}
+
+.btn-container {
+  position: relative;
+  margin-top: 30px;
+}
+
+.submit-btn {
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  border: none;
+  padding: 20px;
+  position: absolute;
+  top: -45px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color:hsl(0deg 0% 8%);
+}
+
+.horizontal-line {
+  border-bottom: 1px solid hsl(0, 0%, 86%);
+}
+
+.form-input {
+  font-size: x-large;
+  font-weight: 700;
+  width: 100px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.input-label {
+  font-size: small;
+  letter-spacing: 2px;
+  margin: 5px 0px;
+}
+
+svg {
+  height: 44px;
+  width: 46px;
+}
+
+@media screen and (max-width: 480px) {
+  .inputs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    width: 300px;
+    margin-top: 30px;
+  }
+
+  .form-field {
+    margin: auto;
+  }
+
+  .form-input {
+    font-size: large;
+    font-weight: 700;
+    width: 50px;
+    padding: 15px;
+  }
+
+  .input-label {
+    margin: 0 0;
+    width: 80%;
+  }
+
+  .invalid-message {
+    color: hsl(0, 100%, 67%);
+    font-weight: 400;
+    font-style: italic;
+    font-size: x-small;
+    width: 80px;
+  }
+
+  .invalid-form {
+    color: hsl(0, 100%, 67%);
+    font-weight: 400;
+    font-style: italic;
+    font-size: x-small;
+    width: 50%;
+  }
+
+  .btn-container {
+    margin: 60px 0 10px 0;
+  }
+
+  .submit-btn {
+    padding: 20px;
+    position: absolute;
+    top: -45px;
+    right: 105px;
+    cursor: pointer;
+  }
+
+}
