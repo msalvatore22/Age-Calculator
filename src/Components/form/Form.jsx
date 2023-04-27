@@ -101,7 +101,7 @@ const Form = ({calculateAge}) => {
     }
     if(year.length == 4){
       let yearNumber = parseInt(year)
-      if(yearNumber>1900 && yearNumber<=currentYear){
+      if(yearNumber>999 && yearNumber<=currentYear){
         setInvalidYear(false)
       } else {
         setInvalidYear(true)
